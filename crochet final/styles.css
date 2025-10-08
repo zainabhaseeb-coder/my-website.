@@ -1,0 +1,386 @@
+
+body{
+  margin:5;
+  font-family: Arial, sans-serif;
+  background: #fff8f5;
+  /* display: flex;
+   width: 150%;  */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+
+
+/* Sidebar Logo Animation */
+.logo {
+  font-family: 'Pacifico', cursive; /* cozy, handmade-style font */
+  font-size: 26px;
+  color: #b56576;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+  animation: fadeInDown 1s ease, glowPulse 2s infinite alternate;
+  cursor: pointer;
+}
+
+/* Soft glowing effect */
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 5px #ffb6c1, 0 0 10px #ffc0cb, 0 0 20px #ffcad4;
+  }
+  to {
+    text-shadow: 0 0 15px #ff9aae, 0 0 30px #ffb3c6, 0 0 45px #ffccd5;
+  }
+}
+
+/* Slide down fade-in when page loads */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover bounce effect */
+.logo:hover {
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+
+
+/* Main Heading Animation */
+.main-heading {
+  font-family: 'Pacifico', cursive; /* same handmade cozy font */
+  font-size: 36px;
+  text-align: center;
+  color: #b56576;
+  margin-bottom: 30px;
+  animation: fadeInScale 1s ease forwards, textGlow 3s infinite alternate;
+  cursor: default;
+}
+
+/* Soft glowing pastel yarn effect */
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 10px #ffb6c1, 0 0 20px #ffc0cb, 0 0 40px #ffe6eb;
+  }
+  to {
+    text-shadow: 0 0 20px #ff9aae, 0 0 40px #ffb3c6, 0 0 60px #ffccd5;
+  }
+}
+
+/* Fade in with scale-up */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hover wave effect */
+.main-heading:hover {
+  animation: wave 1s infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+
+
+
+ .sidebar {
+  width: 220px;
+  background: #ffe6eb;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h2 {
+  color: #b56576;
+  margin-bottom: 20px;
+}
+
+ .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 25px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar ul li a:hover {
+  color: white;
+  background: #efa9a9;
+  transform: translateX(5px);
+} 
+
+
+/* Sidebar */
+.sidebar {
+  width: 210px;
+  background: #ffeaea;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d46a6a;
+}
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  background: #d46a6a;
+  border-radius: 12px;
+  color: #444;
+  transition: all 0.3s ease;
+}
+.sidebar a:hover {
+  background: #a94f4f;
+  transform: scale(1.05);
+}
+
+
+
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  width: calc(100% - 240px);
+  animation: fadeIn 0.5s ease;
+}
+
+/* 🔹 Gallery Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* always 4 per row */
+  gap: 45px 20px;
+
+}
+
+
+/* 🔹 Card / Product Styling */
+.card, .product {
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* make all cards equal height */
+}
+
+.card:hover, .product:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 Product Image */
+.card img, .product img {
+  width: 100%;
+  height: 300px;      /* fixed height for all images */
+  object-fit: cover;  /* crop while keeping proportions */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Product Title */
+.card h3, .product h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1px 0;
+  min-height: 1px;   /* keeps titles aligned */
+}
+
+/* 🔹 Price */
+.card p, .product p {
+  margin: 1px 0;
+  font-weight: bold;
+}
+
+/* 🔹 Buttons */
+.card button, .product button {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #c15d5d;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button:hover, .product button:hover {
+  background: #a94c4c;
+}
+
+/* 
+ .card, .product {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  
+}
+
+.card:hover, .product:hover {
+  transform: scale(1.05);
+ }
+
+.card img, .product img {
+  width: 50%;
+  border-radius: 10px;
+} 
+
+
+.card,
+.item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card img,
+.item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card:hover,
+.item:hover {
+  transform: scale(1.05);
+} */
+
+
+
+
+
+
+
+
+
+
+button {
+  background: #b56576;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #923d53;
+}
+
+.back-btn {
+  margin-top: 70px;
+  background: #888;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    font-weight: bold;
+    display: none; /* hidden by default */
+    opacity: 0;    /* for fade animation */
+    transition: opacity 1s;
+}
+
+
+
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.cart-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+
+
