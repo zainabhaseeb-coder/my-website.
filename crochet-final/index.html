@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crochet Creations 🧶</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/webp" href="il_570xN.6451163232_hmwa.webp">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+      <nav class="sidebar">
+  <h2 class="logo">CozyCrochet19 🧶</h2>
+      <ul>
+        <li><a href="#" onclick="showSection('all')">All</a></li>
+        <li><a href="#" onclick="showSection('keychains')">Keychains</a></li>
+        <li><a href="#" onclick="showSection('toys')">Toys</a></li>
+        <li><a href="#" onclick="showSection('miniatures')">Miniatures</a></li>
+        <li><a href="#" onclick="showSection('custom')">Custom Orders</a></li>
+        <li><a href="#" onclick="showSection('cart')">🛒 Cart</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="content">
+      <!-- Category Cards -->
+      <section id="all" class="gallery-section active">
+       <h1 class="main-heading">My Crochet Creations 🧶</h1>
+        <div class="gallery">
+          <div class="card" onclick="showSection('keychains')">
+            <img src="keychains.webp" alt="Keychains">
+            <h3>Keychains</h3>
+          </div>
+          <div class="card" onclick="showSection('toys')">
+            <img src="toys.jpeg" alt="Toys">
+            <h3>Toys</h3>
+          </div>
+          <div class="card" onclick="showSection('miniatures')">
+            <img src="miniature.jpeg" alt="Miniatures">
+            <h3>Miniatures</h3>
+          </div>
+          <div class="card" onclick="showSection('custom')">
+            <img src="custom.jpeg" alt="Custom Orders">
+            <h3>Custom Orders</h3>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Keychains -->
+
+      <section id="keychains" class="gallery-section hidden">
+        <h1>Keychains</h1>
+        <div class="gallery">
+          
+<div class="product">
+  
+            <img src="cherry.jpeg" alt="Keychain 1">
+            <h4>Cherry Keychain</h4>
+            <p>Rs.500</p>
+
+<button onclick="addToCart('Cherry Keychain', 500, 'cherry.jpeg')">Add to Cart</button>
+
+            <button onclick="buyNow('Cherry Keychain', 500, 'cherry.jpeg')">Buy Now</button>
+
+          </div>
+
+
+ <div class="product">
+
+            <img src="octopus.jpeg" alt="Keychain 2">
+            <h4>Octopus Keychain</h4>
+            <p>Rs.1200</p>
+
+<button onclick="addToCart('Octopus Keychain', 1200, 'octopus.jpeg')">Add to Cart</button>
+          
+
+       <button onclick="buyNow('Octopus Keychain', 1200, 'octopus.jpeg')">Buy Now</button>
+          </div>
+
+<div class="product">
+
+            <img src="pikachu.jpeg" alt="Keychain 3">
+            <h4>Pikachu Keychain</h4>
+            <p>Rs.1000</p>
+
+ <button onclick="addToCart('Pikachu Keychain', 1000, 'pikachu.jpeg')">Add to Cart</button>
+    
+
+           <button onclick="buyNow('Pikachu Keychain', 1000, 'pikachu.jpeg')">Buy Now</button>
+          </div>
+
+
+<div class="product">
+
+            <img src="IMG_0265.jpeg" alt="Keychain 3">
+            <h4>Strawberry Keychain</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Strawberry Keychain', 500, 'IMG_0265.jpeg')">Add to Cart</button>
+    
+
+           <button onclick="buyNow('Strawberry Keychain', 500, 'IMG_0265.jpeg')">Buy Now</button>
+          </div>
+
+
+<div class="product">
+
+            <img src="IMG_0259.jpeg" alt="Keychain 3">
+            <h4>Watermelon Keychain</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Watermelon Keychain', 500, 'IMG_0259.jpeg')">Add to Cart</button>
+    
+
+           <button onclick="buyNow('Watermelon Keychain', 500, 'IMG_0259.jpeg')">Buy Now</button>
+          </div>
+
+
+<div class="product">
+
+            <img src="IMG_0256.jpeg" alt="Keychain 3">
+            <h4>Matcha Keychain</h4>
+            <p>Rs.400</p>
+
+ <button onclick="addToCart('Matcha Keychain', 400, 'IMG_0256.jpeg')">Add to Cart</button>
+    
+
+           <button onclick="buyNow('Matcha Keychain', 400, 'IMG_0256.jpeg')">Buy Now</button>
+          </div>
+
+<div class="product">
+
+            <img src="IMG_0255.jpeg" alt="Keychain 3">
+            <h4>Pink-panther Keychain</h4>
+            <p>Rs.1500</p>
+
+ <button onclick="addToCart('Pink-panther Keychain', 1500, 'IMG_0255.jpeg')">Add to Cart</button>
+    
+
+           <button onclick="buyNow('Pink-panther Keychain', 1500, 'IMG_0255.jpeg')">Buy Now</button>
+          </div>
+
+
+
+<div class="product">
+
+            <img src="IMG_0478.png" alt="Toy 2">
+            <h4>Chicks Keychain</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Chicks Keychain', 500, 'IMG_0478.png')">Add to Cart</button>
+            
+             <button onclick="buyNow('Chicks Keychain', 500, 'IMG_0478.png')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="IMG_0479.png" alt="Toy 2">
+            <h4>Minion Keychain</h4>
+            <p>Rs.700</p>
+
+ <button onclick="addToCart('Minion Keychain', 700, 'IMG_0479.png')">Add to Cart</button>
+            
+             <button onclick="buyNow('Minion Keychain', 700, 'IMG_0479.png')">Buy Now</button>
+         </div>
+
+<div class="product">
+
+            <img src="IMG_0480.png" alt="Toy 2">
+            <h4>Turtle Keychain</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Turtle Keychain', 500, 'IMG_0480.png')">Add to Cart</button>
+            
+             <button onclick="buyNow('Turtle Keychain', 500, 'IMG_0480.png')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="corn.jpeg" alt="Toy 2">
+            <h4>Corn Keychain</h4>
+            <p>Rs.600</p>
+
+ <button onclick="addToCart('Corn Keychain', 600, 'corn.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Corn Keychain', 600, 'corn.jpeg')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="flower.jpeg" alt="Toy 2">
+            <h4>Flower Keychain</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Flower Keychain', 500, 'flower.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Flower Keychain', 500, 'flower.jpeg')">Buy Now</button>
+         </div>
+
+
+
+
+        </div>
+        <button class="back-btn" onclick="showSection('all')">⬅ Back</button>
+      </section>
+
+
+      <!-- Toys -->
+
+      <section id="toys" class="gallery-section hidden">
+        <h1>Toys</h1>
+        <div class="gallery">
+
+<div class="product">
+
+            <img src="duckling.jpeg" alt="Toy 1">
+            <h4>Duckling Toy</h4>
+            <p>Rs.1000</p>
+
+ <button onclick="addToCart('Duckling Toy', 1000, 'duckling.jpeg')">Add to Cart</button>
+
+          <button onclick="buyNow('Duckling Toy', 1000, 'duckling.jpeg')">Buy Now</button>
+          </div>
+
+
+  <div class="product">
+
+            <img src="forg.jpeg" alt="Toy 2">
+            <h4>Frog Toy</h4>
+            <p>Rs.700</p>
+
+  <button onclick="addToCart('Frog Toy', 700, 'frog.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('Frog Toy', 700, 'frog.jpeg')">Buy Now</button>
+          </div>
+
+
+  <div class="product">
+
+            <img src="IMG_0271.jpeg" alt="Toy 3">
+            <h4>Donald Duck Toy</h4>
+            <p>Rs.1000</p>
+
+  <button onclick="addToCart('Donald Duck Toy', 1000, 'IMG_0271.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('Donald Duck Toy', 1000, 'IMG_0271.jpeg')">Buy Now</button>
+          </div>
+
+
+ <div class="product">
+
+            <img src="IMG_0270.png" alt="Toy 4">
+            <h4>Giraffe Toy</h4>
+            <p>Rs.1000</p>
+
+  <button onclick="addToCart('Giraffe Toy', 1000, 'IMG_0270.png')">Add to Cart</button>
+
+           <button onclick="buyNow('Giraffe Toy', 1000, 'IMG_0270.png')">Buy Now</button>
+          </div>
+
+
+ <div class="product">
+
+            <img src="IMG_0269.png" alt="Toy 5">
+            <h4>Miky Toy</h4>
+            <p>Rs.2000</p>
+
+  <button onclick="addToCart('Miky Toy', 2000, 'IMG_0269.png')">Add to Cart</button>
+
+           <button onclick="buyNow('Miky Toy', 2000, 'IMG_0269.png')">Buy Now</button>
+          </div>
+
+
+ <div class="product">
+
+            <img src="IMG_0267.jpeg" alt="Toy 5">
+            <h4>Patrick Toy</h4>
+            <p>Rs.2000</p>
+
+  <button onclick="addToCart('patrick Toy', 2000, 'IMG_0267.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('patrick Toy', 2000, 'IMG_0267.jpeg')">Buy Now</button>
+          </div>
+
+
+ <div class="product">
+
+            <img src="IMG_0263.jpeg" alt="Toy 5">
+            <h4>Hopping Bunny Toy</h4>
+            <p>Rs.2000</p>
+
+  <button onclick="addToCart('Hopping Bunny Toy', 2000, 'IMG_0263.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('Hopping Bunny Toy', 2000, 'IMG_0263.jpeg')">Buy Now</button>
+          </div>
+
+ <div class="product">
+
+            <img src="IMG_0261.jpeg" alt="Toy 5">
+            <h4>Spongebob Toy</h4>
+            <p>Rs.2000</p>
+
+  <button onclick="addToCart('Spongebob Toy', 2000, 'IMG_0261.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('Spongebob Toy', 2000, 'IMG_0261.jpeg')">Buy Now</button>
+          </div>
+
+ <div class="product">
+
+            <img src="IMG_0258.jpeg" alt="Toy 5">
+            <h4>Unicorn Toy</h4>
+            <p>Rs.2000</p>
+
+  <button onclick="addToCart('Unicorn  Toy', 2000, 'IMG_0258.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('Unicorn  Toy', 2000, 'IMG_0258.jpeg')">Buy Now</button>
+          </div>
+
+
+ <div class="product">
+
+            <img src="customise.jpeg" alt="Toy 5">
+            <h4>Yellow Car Toy</h4>
+            <p>Rs.2000</p>
+
+  <button onclick="addToCart('Yellow Car  Toy', 2000, 'customise.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('Yellow Car  Toy', 2000, 'customise.jpeg')">Buy Now</button>
+          </div>
+
+ <div class="product">
+
+            <img src="red car.jpeg" alt="Toy 5">
+            <h4>Red Car Toy</h4>
+            <p>Rs.2000</p>
+
+  <button onclick="addToCart('Red Car  Toy', 2000, 'red car.jpeg')">Add to Cart</button>
+
+           <button onclick="buyNow('Red Car  Toy', 2000, 'red car.jpeg')">Buy Now</button>
+          </div>
+
+        </div>
+        <button class="back-btn" onclick="showSection('all')">⬅ Back</button>
+      </section>
+
+
+      <!-- Miniatures -->
+
+      <section id="miniatures" class="gallery-section hidden">
+        <h1>Miniatures</h1>
+        <div class="gallery">
+
+  <div class="product">
+
+            <img src="mini cup.jpeg" alt="Miniature">
+            <h4>Mini coffee Cup</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Mini Coffee Cup', 500, 'mini cup.jpeg')">Add to Cart</button>
+        
+             <button onclick="buyNow('Mini Coffee Cup', 500, 'mini cup.jpeg')">Buy Now</button>
+          </div>
+
+
+   <div class="product">
+
+            <img src="mini bag.jpeg" alt="Toy 2">
+            <h4>Mini Bag</h4>
+            <p>Rs.400</p>
+
+ <button onclick="addToCart('Mini Bag', 400, 'mini bag.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Mini Bag', 400, 'mini bag.jpeg')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="IMG_0266.jpeg" alt="Toy 2">
+            <h4>Mini Sunflower Pot</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Mini Sunflower Pot', 500, 'IMG_0266.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Mini Sunflower Pot', 500, 'IMG_0266.jpeg')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="IMG_0257.jpeg" alt="Toy 2">
+            <h4>Mini Pink Bag</h4>
+            <p>Rs.400</p>
+
+ <button onclick="addToCart('Mini Pink Bag', 400, 'IMG_0257.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Mini Pink Bag', 400, 'IMG_0257.jpeg')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="IMG_0264.jpeg" alt="Toy 2">
+            <h4>Mini Keychain Bag</h4>
+            <p>Rs.400</p>
+
+ <button onclick="addToCart('Mini Keychain Bag', 400, 'IMG_0264.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Mini Keychain Bag', 400, 'IMG_0264.jpeg')">Buy Now</button>
+         </div>
+
+
+        </div>
+        <button class="back-btn" onclick="showSection('all')">⬅ Back</button>
+      </section>
+
+
+      <!-- Custom Orders -->
+      <section id="custom" class="gallery-section hidden">
+        <h1>Custom Orders</h1>
+       
+        <p> 
+          Hi! <br>
+          <br>I’m a crochet enthusiast sharing my handmade creations.<br>
+
+          <br>You can request any custom crochet item.<br>
+          <br>DM me on Instagram!<br>
+          <br><a href="https://www.instagram.com/cozycrochet19?utm_source=qr&igsh=MTZvN2Jxem80d3VocA==" target="_blank">Instagram</a>
+        </p>
+
+<h2>Presenting Some Customised Stuff</h2>
+
+       <div class="gallery">
+
+<div class="product">
+
+            <img src="IMG_0262.jpeg" alt="Toy 2">
+            <h4>Tulip Flower</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Tulip Flower', 500, 'IMG_0262.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Tulip Flower', 500, 'IMG_0262.jpeg')">Buy Now</button>
+         </div>
+
+<div class="product">
+
+            <img src="IMG_0260.jpeg" alt="Toy 2">
+            <h4>Crochet Coaster</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Crochet Coaster', 500, 'IMG_0260.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Crochet Coaster', 500, 'IMG_0260.jpeg')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="duckling.jpeg" alt="Toy 2">
+            <h4>Duckling</h4>
+            <p>Rs.1000</p>
+
+ <button onclick="addToCart('Duckling', 1000, 'duckling.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Duckling', 1000, 'duckling.jpeg')">Buy Now</button>
+         </div>
+
+ <div class="product">
+
+            <img src="IMG_0477.png" alt="Toy 2">
+            <h4>Car in Blue</h4>
+            <p>Rs.2000</p>
+
+ <button onclick="addToCart('Car in Blue', 2000, 'IMG_0477.png')">Add to Cart</button>
+            
+             <button onclick="buyNow('Car in Blue', 2000, 'IMG_0477.png')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="sunflower.jpeg" alt="Toy 2">
+            <h4>Sunflower</h4>
+            <p>Rs.500</p>
+
+ <button onclick="addToCart('Sunflower', 500, 'sunflower.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Sunflower', 500, 'sunflower.jpeg')">Buy Now</button>
+         </div>
+      
+
+<div class="product">
+
+            <img src="unicorn.jpeg" alt="Toy 2">
+            <h4>Unicorn in brown</h4>
+            <p>Rs.2000</p>
+
+ <button onclick="addToCart('Unicorn in brown', 2000, 'unicorn.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Unicorn in brown', 2000, 'unicorn.jpeg')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="feeder cover 1.jpeg" alt="Toy 2">
+            <h4>Minion Feeder Cover</h4>
+            <p>Rs.1000</p>
+
+ <button onclick="addToCart('Minion Feeder Cover', 1000, 'feeder cover 1.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Minion Feeder Cover', 1000, 'feeder cover 1.jpeg')">Buy Now</button>
+         </div>
+
+
+<div class="product">
+
+            <img src="police car.jpeg" alt="Toy 2">
+            <h4>Police Car</h4>
+            <p>Rs.1000</p>
+
+ <button onclick="addToCart('Police Car', 1000, 'police car.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Police Car', 1000, 'police car.jpeg')">Buy Now</button>
+         </div>
+
+
+
+
+<div class="product">
+
+            <img src="feeder cover 2.jpeg" alt="Toy 2">
+            <h4>Bear Feeder Cover</h4>
+            <p>Rs.1000</p>
+
+ <button onclick="addToCart('Bear Feeder Cover', 1000, 'feeder cover 1.jpeg')">Add to Cart</button>
+            
+             <button onclick="buyNow('Bear Feeder Cover', 1000, 'feeder cover 1.jpeg')">Buy Now</button>
+         </div>
+
+
+
+
+
+
+        </div>
+        <button class="back-btn" onclick="showSection('all')">⬅ Back</button>
+      </section>
+
+      <!-- Cart -->
+       <section id="cart" class="gallery-section hidden"> 
+          <h1>Your Cart</h1>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: Rs.0</p>
+        <!-- <button onclick="checkout()">Proceed to Checkout</button> -->
+       <!-- <button class="back-btn" onclick="showSection('all')">⬅ Back</button>
+      </section>  -->
+  
+<!-- <div class="contact">
+  <h2>Contact Me</h2> -->
+  <!-- <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> -->
+    <!-- <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div> -->
+
+
+
+      <div class="main fade-in">
+    <h1>Checkout</h1>
+     <!-- <form action="https://formspree.io/f/xblzjbvz" method="POST"></form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Address" required />
+      <select required>
+        <option value="">Select Payment Method</option>
+        <option value="cod">Cash on Delivery</option>
+        <option value="bank">Bank Transfer</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form> -->
+
+    <form action="https://formspree.io/f/xblzjbvz" method="POST" id="checkout-form" onsubmit="placeOrder(event)">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="address" placeholder="Address" required />
+      <input type="text" id="city" placeholder="City" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+
+      <select name="payment" required>
+          <option value="">Select Payment Method</option>
+          <option value="cod">Cash on Delivery</option>
+          <option value="bank">Bank Transfer</option>
+      </select>
+
+        <!-- Hidden field for order details -->
+      <textarea name="orderDetails" id="orderDetails" style="display:none;"></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+    <button class="back-btn" onclick="showSection('all')">⬅ Back</button>
+      </section> 
+
+    <div id="order-success" class="success-message zoom-in"  style="display:none;">
+      🎉 Thank you! Your order has been placed ✅.
+    </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
